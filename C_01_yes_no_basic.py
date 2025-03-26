@@ -1,9 +1,16 @@
-want_instructions = input('Do you want to see the instructions? ').lower()
+  while True:
 
-# check if the user says yes/no
-if want_instructions == 'yes' or want_instructions == 'y':
-    print('you said yes')
-elif want_instructions == 'no' or want_instructions:
-    print('you said no')
-else:
-    print('please enter yes / no')
+      want_instructions = input("do you want to see the instructions? ").lower()
+
+      # check if the user says yes/no
+      if want_instructions == 'yes' or want_instructions == 'y':
+         print('you said yes')
+         break
+     elif want_instructions == 'no' or want_instructions == 'n':
+         print('you said no')
+         break
+     else:
+         print('please enter yes / no')
+         continue
+
+print('we done')
